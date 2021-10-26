@@ -43,7 +43,7 @@ def main_menu():
                 game() #mandamos a llamar al metodo del juego.
         if button_2.collidepoint((mx, my)):
             if click:
-                options()
+                game2()
         pygame.draw.rect(screen, (255, 0, 0), button_1)
         draw_text('Juego 1', font, (255, 255, 255), screen, 360, 120)
         pygame.draw.rect(screen, (255, 0, 0), button_2)
@@ -83,8 +83,8 @@ def game():
         mainClock.tick(60)"""
     subprocess.getoutput('python memorypuzzle.py')
  
-def options():
-    running = True
+def game2():
+    """running = True
     while running:
         screen.fill((0,0,0))
  
@@ -98,6 +98,7 @@ def options():
                     running = False
         
         pygame.display.update()
-        mainClock.tick(60)
- 
+        mainClock.tick(60)"""
+    subprocess.getoutput('python hacker.py')
+#se manda a ejecutar menu principal 
 main_menu()
